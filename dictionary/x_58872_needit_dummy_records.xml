@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="29fdd788c3483a10c090990ed4013183" label="Dummy Records" max_length="40" name="x_58872_needit_dummy_records" type="collection">
+        <element label="ID" max_length="256" name="id" type="string"/>
+        <element label="Title" max_length="256" name="title" type="string"/>
+    </element>
+</database>

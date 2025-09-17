@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>This Client Script prevents users from submitting an Incident record &#13;
+with Priority = 1 if the Short Description field is empty. &#13;
+It ensures that all critical incidents have a clear Short Description &#13;
+before being saved to the database.&#13;
+</description>
+        <field>state</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages>g_form.addErrorMessage("⚠️ Short Description is required for Priority 1 incidents.");&#13;
+</messages>
+        <name>NeedIt onSubmit Example</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+    // Get field values
+    var priority = g_form.getValue('priority');
+    var shortDesc = g_form.getValue('short_description');
+
+    // Check if Priority = 1 and Short Description is empty
+    if (priority == '1' && shortDesc.trim() === '') {
+        g_form.addErrorMessage("⚠️ Short Description is required for Priority 1 incidents.");
+        return false; // stop form submission
+    }
+
+    return true; // allow form submission
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-16 10:27:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e7c78f05c3c47e10c090990ed40131ad</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>NeedIt onSubmit Example</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_client_e7c78f05c3c47e10c090990ed40131ad</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-17 06:39:46</sys_updated_on>
+        <table>incident</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
