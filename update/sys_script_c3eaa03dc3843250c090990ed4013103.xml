@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_58872_needit_needit</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>BR_Validate_SetFields</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /* previous may be null for inserts */) {
+  try {
+    gs.info("[BR Debug] BR_Validate_SetFields start for: " + current.getTableName() + "/" + current.sys_id);
+
+    // 1) Prevent 'When needed' being set to a past date (example date field: u_when_needed)
+    if (!current.u_when_needed.nil()) {
+      var whenNeeded = new GlideDateTime(current.u_when_needed);
+      var now = new GlideDateTime();
+      if (whenNeeded.before(now)) {
+        gs.error("[BR Debug] u_when_needed is in the past: " + current.u_when_needed);
+        gs.addErrorMessage("When needed cannot be in the past.");
+        // abort the database operation
+        current.setAbortAction(true);
+        return;
+      }
+    }
+
+    // 2) Auto-set requested_for (reference) to the current user if empty
+    if (current.u_requested_for.nil()) {
+      current.u_requested_for = gs.getUserID();
+      gs.info("[BR Debug] Set u_requested_for to current user: " + gs.getUserID());
+    }
+
+    // 3) Copy short_description into description if description empty
+    if (current.description.nil() && !current.short_description.nil()) {
+      current.description = current.short_description;
+      gs.info("[BR Debug] Copied short_description to description");
+    }
+
+  } catch (ex) {
+    gs.error("[BR Debug] Exception in BR_Validate_SetFields: " + ex);
+  }
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-18 06:43:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c3eaa03dc3843250c090990ed4013103</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>BR_Validate_SetFields</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_c3eaa03dc3843250c090990ed4013103</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 06:43:37</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=c3eaa03dc3843250c090990ed4013103"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>c3eaa03dc3843250c090990ed4013103</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-18 06:43:37</sys_created_on>
+        <sys_id>243ca0f9c3843250c090990ed4013114</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 06:43:37</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

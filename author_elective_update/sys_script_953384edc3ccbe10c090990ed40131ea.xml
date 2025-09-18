@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_58872_needit_needit</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message><![CDATA[<p><strong>Hello <span style="color: rgb(185, 106, 217);"><span style="background-color: rgb(45, 194, 107);">World! </span></span></strong></p>]]></message>
+        <name>NeedIt When needed field date_123</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[current.activity_duecurrent.approval_setcurrent.company.zipcurrent.assigned_to.company.city(function executeRule(current, previous /*null when async*/ ) {
+
+    // Add your code here
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-17 09:12:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>953384edc3ccbe10c090990ed40131ea</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>NeedIt When needed field date_123</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_953384edc3ccbe10c090990ed40131ea</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-17 12:07:03</sys_updated_on>
+        <template>u_requested_forDYNAMIC90d1921e5f510100a9ad2572f2b477fe^descriptionSAMEASshort_description^state=14^assigned_to=62826bf03710200044e0bfc8bcbe5df1^EQ</template>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=953384edc3ccbe10c090990ed40131ea"/>
+    <sys_es_latest_script action="DELETE">
+        <id>953384edc3ccbe10c090990ed40131ea</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-17 09:12:41</sys_created_on>
+        <sys_id>66b4c86dc3ccbe10c090990ed401317c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-17 09:12:41</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>1d4714173b58ea90677f04e0b5e45a26</instance_id>
+        <instance_name>dev304128</instance_name>
+        <name>sys_script_953384edc3ccbe10c090990ed40131ea</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_58872_needit_needit&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message&gt;&lt;![CDATA[&lt;p&gt;&lt;strong&gt;Hello &lt;span style="color: rgb(185, 106, 217);"&gt;&lt;span style="background-color: rgb(45, 194, 107);"&gt;World! &lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;]]&gt;&lt;/message&gt;&lt;name&gt;NeedIt When needed field date_123&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[current.activity_duecurrent.approval_setcurrent.company.zipcurrent.assigned_to.company.city(function executeRule(current, previous /*null when async*/ ) {
+
+    // Add your code here
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-09-17 09:12:42&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;953384edc3ccbe10c090990ed40131ea&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name&gt;NeedIt When needed field date_123&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_953384edc3ccbe10c090990ed40131ea&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-09-17 12:07:03&lt;/sys_updated_on&gt;&lt;template&gt;u_requested_forDYNAMIC90d1921e5f510100a9ad2572f2b477fe^descriptionSAMEASshort_description^state=14^assigned_to=62826bf03710200044e0bfc8bcbe5df1^EQ&lt;/template&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=953384edc3ccbe10c090990ed40131ea"/&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;953384edc3ccbe10c090990ed40131ea&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-09-17 09:12:41&lt;/sys_created_on&gt;&lt;sys_id&gt;66b4c86dc3ccbe10c090990ed401317c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-09-17 09:12:41&lt;/sys_updated_on&gt;&lt;table&gt;sys_script&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-7442907</payload_hash>
+        <record_name>NeedIt When needed field date_123</record_name>
+        <reverted_from/>
+        <source>9485bc03c37fa210c090990ed40131c5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-17 12:07:03</sys_created_on>
+        <sys_id>78ace4e1c3c0fe10c090990ed4013195</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>199579234ff0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-17 12:07:03</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>b4ace4ad2440fe10f0686eb083e11e9f</update_guid>
+        <update_guid_history>b4ace4ad2440fe10f0686eb083e11e9f:-7442907,53790ce57800fe10d6f74023bf0e39f6:312324160,e14840a57700fe1034c2f62217525545:-1997095283,d7388c651300fe1034db1b227e1415f5:640159418,1308cc25e800fe10f252293ec6635b32:1078149467,58c744659a00fe1056a1d2f898a868e6:1549799073,023684e1a700fe103b45817369a07a4d:-1221915315,1c2600a19f00fe1088c355c7f71191ec:-2078070047,b435c4616700fe10aaaa687a9b4deefb:-98495586,f6b4c461a100fe103ba0b880dc058c13:1665847022</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-17 12:08:53</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>6c42bf0372d34fda9fd4b10aadb7b024</sys_id>
+        <sys_metadata>953384edc3ccbe10c090990ed40131ea</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NeedIt When needed field date_123</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent display_value="NeedIt">4025fc43c37fa210c090990ed40131f1</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_script_953384edc3ccbe10c090990ed40131ea</sys_update_name>
+        <sys_update_version display_value="sys_script_953384edc3ccbe10c090990ed40131ea">78ace4e1c3c0fe10c090990ed4013195</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-17 12:08:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
